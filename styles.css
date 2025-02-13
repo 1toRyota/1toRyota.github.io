@@ -1,0 +1,284 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Черный фон */
+    color: #fff; /* Белый цвет текста */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(102, 102, 102, 0.7); /* Прозрачный белый фон */
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    margin-left: 3%;
+    margin-right: 3%;
+    z-index: 1;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.container.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.greeting {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff69b4; /* Розовый цвет заголовка */
+}
+
+.greetings {
+    font-size: 1.3em;
+}
+
+.message-container {
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #fff; /* Белый цвет текста */
+}
+
+.footer {
+    font-size: 1em;
+    color: #ff69b4; /* Розовый цвет футера */
+}
+
+/* Модальное окно */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.modal {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    margin: 5%;
+}
+
+.modal h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #ff69b4; /* Розовый цвет заголовка */
+}
+
+.modal p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #fff; /* Белый цвет текста */
+}
+
+.modal button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff69b4; /* Розовый цвет кнопки */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal button:hover {
+    background-color: #ff1493; /* Темный розовый цвет при наведении */
+}
+
+/* Добавляем неоновые сердца разного размера и под разными наклонами */
+.neon-heart {
+    position: absolute;
+    background-image: url('neon-heart.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    animation: neonBlink 1.5s infinite alternate;
+}
+
+@keyframes neonBlink {
+    0% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.neon-heart1 {
+    top: 10%;
+    left: 10%;
+    transform: rotate(15deg);
+    width: 50px;
+    height: 50px;
+}
+
+.neon-heart2 {
+    top: 20%;
+    left: 30%;
+    transform: rotate(-10deg);
+    width: 70px;
+    height: 70px;
+}
+
+.neon-heart3 {
+    top: 30%;
+    left: 50%;
+    transform: rotate(20deg);
+    width: 60px;
+    height: 60px;
+}
+
+.neon-heart4 {
+    top: 40%;
+    left: 70%;
+    transform: rotate(-15deg);
+    width: 80px;
+    height: 80px;
+}
+
+.neon-heart5 {
+    top: 50%;
+    left: 90%;
+    transform: rotate(10deg);
+    width: 40px;
+    height: 40px;
+}
+
+.neon-heart6 {
+    top: 60%;
+    left: 20%;
+    transform: rotate(-20deg);
+    width: 90px;
+    height: 90px;
+}
+
+.neon-heart7 {
+    top: 70%;
+    left: 40%;
+    transform: rotate(15deg);
+    width: 50px;
+    height: 50px;
+}
+
+.neon-heart8 {
+    top: 80%;
+    left: 60%;
+    transform: rotate(-10deg);
+    width: 60px;
+    height: 60px;
+}
+
+.neon-heart9 {
+    top: 90%;
+    left: 80%;
+    transform: rotate(20deg);
+    width: 70px;
+    height: 70px;
+}
+
+.neon-heart10 {
+    top: 5%;
+    left: 25%;
+    transform: rotate(5deg);
+    width: 30px;
+    height: 30px;
+}
+
+.neon-heart11 {
+    top: 15%;
+    left: 45%;
+    transform: rotate(-5deg);
+    width: 40px;
+    height: 40px;
+}
+
+.neon-heart12 {
+    top: 25%;
+    left: 65%;
+    transform: rotate(10deg);
+    width: 50px;
+    height: 50px;
+}
+
+.neon-heart13 {
+    top: 35%;
+    left: 85%;
+    transform: rotate(-10deg);
+    width: 60px;
+    height: 60px;
+}
+
+.neon-heart14 {
+    top: 45%;
+    left: 5%;
+    transform: rotate(20deg);
+    width: 70px;
+    height: 70px;
+}
+
+.neon-heart15 {
+    top: 55%;
+    left: 25%;
+    transform: rotate(-20deg);
+    width: 80px;
+    height: 80px;
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 600px) {
+    body {
+        background-size: 70px 70px; /* Уменьшаем размер сердец на мобильных устройствах */
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .greeting {
+        font-size: 1.5em;
+    }
+
+    .greetings {
+        font-size: 1.3em;
+    }
+
+    .message {
+        font-size: 1em;
+    }
+
+    .footer {
+        font-size: 0.9em;
+    }
+
+    .neon-heart {
+        width: 40px;
+        height: 40px;
+    }
+
+    .modal {
+        width: 90%;
+    }
+}

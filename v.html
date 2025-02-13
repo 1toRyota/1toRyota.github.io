@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ой, а это тебе</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Модальное окно -->
+    <div id="overlay" class="overlay">
+        <div class="modal">
+            <h2>Внимание!</h2>
+            <p>Эта валентинка предназначена только для получателя. Убедительная просьба открывать без посторонних глаз.</p>
+            <button id="openGreeting">Открыть</button>
+        </div>
+    </div>
+
+    <div class="container" id="greetingContainer" style="display: none;">
+        <h1 class="greeting">С Днем святого Валентина!</h1>
+        <h2 class="greetings">Дорогая Вика,</h2>
+        <div class="message-container">
+            <p class="message">День святого Валентина — это отличный повод напомнить тебе, какой ты классный человечек! 🌟 Ты умеешь превращать любую ситуацию в приключение, а обычный день — в праздник. С тобой никогда не бывает скучно, и это бесценно! <br>
+                Желаю тебе, чтобы этот год стал настоящим фейерверком из ярких эмоций, новых открытий и крутых возможностей. Пусть рядом всегда будут те, кто заставляет тебя улыбаться, а жизнь будет полна приятных сюрпризов и моментов, которые заставляют сердце биться чаще. <br>
+                Помни: мир создан для того, чтобы ты покоряла его своими мечтами и идеями! Так что дерзай, твори и будь такой же потрясающей, какая ты есть. </p>
+        </div>
+        <footer class="footer">P.S. Тут должна была быть подпись, но ты, наверное, уже сама догадалась)</footer>
+    </div>
+
+    <!-- Добавляем неоновые сердца разного размера и под разными наклонами -->
+    <div class="neon-heart neon-heart1"></div>
+    <div class="neon-heart neon-heart2"></div>
+    <div class="neon-heart neon-heart3"></div>
+    <div class="neon-heart neon-heart4"></div>
+    <div class="neon-heart neon-heart5"></div>
+    <div class="neon-heart neon-heart6"></div>
+    <div class="neon-heart neon-heart7"></div>
+    <div class="neon-heart neon-heart8"></div>
+    <div class="neon-heart neon-heart9"></div>
+    <div class="neon-heart neon-heart10"></div>
+    <div class="neon-heart neon-heart11"></div>
+    <div class="neon-heart neon-heart12"></div>
+    <div class="neon-heart neon-heart13"></div>
+    <div class="neon-heart neon-heart14"></div>
+    <div class="neon-heart neon-heart15"></div>
+
+    <script>
+        document.getElementById('openGreeting').addEventListener('click', function() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('greetingContainer').style.display = 'block';
+            document.getElementById('greetingContainer').classList.add('show');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ой, а это тебе</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Модальное окно -->
+    <div id="overlay" class="overlay">
+        <div class="modal">
+            <h2>Внимание!</h2>
+            <p>Эта валентинка предназначена только для получателя. Убедительная просьба открывать без посторонних глаз.</p>
+            <button id="openGreeting">Открыть</button>
+        </div>
+    </div>
+
+    <div class="container" id="greetingContainer" style="display: none;">
+        <h1 class="greeting">С Днем святого Валентина!</h1>
+        <h2 class="greetings">Дорогая Катя,</h2>
+        <div class="message-container">
+            <p class="message">Хочу поздравить тебя с Днём святого Валентина — праздником любви, дружбы и тепла! 🌸 <br>
+                Ты — невероятный человек, который делает этот мир ярче своим присутствием. Спасибо за твою поддержку, искренность и за то, что ты всегда остаёшься собой — такой светлой, доброй и настоящей. <br>
+                Пусть в твоей жизни будет больше радостных моментов, улыбок и приятных сюрпризов. Желаю тебе окружать себя только теми, кто по-настоящему ценит тебя, и никогда не терять веру в людей и в себя. Пусть каждый день приносит тебе что-то новое и вдохновляющее!</p>
+        </div>
+        <footer class="footer">P.S. Тут должна была быть подпись, но ты, наверное, уже сама догадалась)</footer>
+    </div>
+
+    <!-- Добавляем сердца разного размера и под разными наклонами -->
+    <div class="heart heart1"></div>
+    <div class="heart heart2"></div>
+    <div class="heart heart3"></div>
+    <div class="heart heart4"></div>
+    <div class="heart heart5"></div>
+    <div class="heart heart6"></div>
+    <div class="heart heart7"></div>
+    <div class="heart heart8"></div>
+    <div class="heart heart9"></div>
+    <div class="heart heart10"></div>
+    <div class="heart heart11"></div>
+    <div class="heart heart12"></div>
+    <div class="heart heart13"></div>
+    <div class="heart heart14"></div>
+    <div class="heart heart15"></div>
+
+    <script>
+        document.getElementById('openGreeting').addEventListener('click', function() {
+            document.getElementById('overlay').style.display = 'none';
+            document.getElementById('greetingContainer').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
